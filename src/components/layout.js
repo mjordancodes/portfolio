@@ -13,6 +13,8 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            name
+            tagline
           }
         }
       }
@@ -27,7 +29,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Landing siteTitle={data.site.siteMetadata.title}/>
+        <Landing 
+          name={data.site.siteMetadata.name}
+          tagline={data.site.siteMetadata.tagline} />
         <div className="page-container">
           {children}
         </div>

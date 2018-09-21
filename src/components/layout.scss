@@ -1,0 +1,29 @@
+// Document Navigation:
+  // Colors
+  // Typography
+  // Normalization
+
+// COLORS
+$one: #F41C54;
+$two: #FF9F00;
+$three: #FBD506;
+$four: #A8BF12;
+$five: #00AAB5;
+
+$black: #333;
+$white: #fefefe;
+$darkgray: #666;
+$gray: #999;
+
+// TYPOGRAPHY
+
+
+// NORMALIZATION
+* {
+  box-sizing: border-box;
+  color: $black;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}

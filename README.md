@@ -1,4 +1,4 @@
-# Portfolio: 
+# Portfolio
 Gatsby + Contentful = <3
 
 # Project Steps
@@ -11,10 +11,21 @@ Gatsby + Contentful = <3
 5. Installed and set up some styling plugins.
 
 
-# Plugins Used
+# Plugins Used (Gastby)
 ## Styling
 - [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/)
 - [gatsby-plugin-typography](https://www.gatsbyjs.org/docs/typography-js/)
-- [typography-theme-doelger](https://kyleamathews.github.io/typography.js/)
+- [typography-theme-doelger](https://github.com/KyleAMathews/typography.js/tree/master/packages/typography-theme-doelger)
 ## Functionality
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)
+
+## Project Structure
+- ```src```
+  - ```components```
+    - ```layout.js``` - Holds the over all page structure for all pages of the site. Kind of like the index.html in normal world.
+      - ```layout.scss``` - Global styles
+    - ```landing.js```- Acts as a landing/splash/above-the-fold component.
+      - Pages using this component:
+        - home (index.js)
+    - ```section.js```-
+
