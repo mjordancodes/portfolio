@@ -16,6 +16,7 @@ Gatsby + Contentful = <3
 - [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/)
 - [gatsby-plugin-typography](https://www.gatsbyjs.org/docs/typography-js/)
 - [typography-theme-doelger](https://github.com/KyleAMathews/typography.js/tree/master/packages/typography-theme-doelger)
+- [react-icon](https://www.npmjs.com/package/react-icons)
 ## Functionality
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)
 
