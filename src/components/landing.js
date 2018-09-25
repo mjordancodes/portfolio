@@ -8,7 +8,7 @@ const Landing = ({ name, tagline }) => (
       <span className={styles.who}>{name}</span>
       {tagline}
     </h1>
-    <a href="#" className={styles.scroll}>
+    <a href="/" className={styles.scroll}>
       <FaChevronDown />
     </a>
   </header>

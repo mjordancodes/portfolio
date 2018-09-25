@@ -1,0 +1,27 @@
+@import 'variables';
+
+.fullWidth {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  img {
+    margin: 10px auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  @media (min-width: 600px) {
+    justify-content: space-around;
+    flex-direction: row;
+    article {
+      flex: 1 1 200px;
+      padding: 5px;
+    }
+  }
+}
