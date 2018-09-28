@@ -1,0 +1,18 @@
+@import 'variables';
+
+.contact {
+  font-size: 1.2em;
+  align-self: center;
+  transition: 500ms; 
+  svg {
+    width: 2em;
+    height: 2em;
+    transition: 500ms;
+  }
+  &:hover, svg:hover {
+    fill: darken($five, 10%);
+    color: darken($five, 10%);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}

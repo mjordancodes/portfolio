@@ -5,6 +5,7 @@ import Section from '../components/section'
 import SubOne from '../components/subone'
 import SubTwo from '../components/subtwo'
 import Community from '../components/community'
+import Contact from '../components/contact'
 
 const IndexPage = () => (
   <Layout>
@@ -35,9 +36,41 @@ const IndexPage = () => (
         </Community>
       </SubOne>
     </Section>
-    <Section title="Projects" />
-    <Section title="Blog" />
-    <Section title="Contact" />
+    <Section title="Contact">
+      <SubOne 
+        ifFlex={false}>
+        <p>Reach out! I would love to hear from you to chat about anything related to web development or CSS. I can be found in many places around the interwebs usually as @mjordancodes. You can also poke around to see more code samples or some of the pictures I like to post.</p>
+      </SubOne>
+      <SubOne
+        isFlex={true}>
+        <Contact 
+          title="GitHub"
+          url="https://github.com/mjordancodes"
+          handle="mjordancodes"
+        />
+        <Contact 
+          title="Linkedin"
+        />
+        <Contact 
+          title="CodePen"
+        />
+        <Contact 
+          title="Instagram"
+        />
+        <Contact 
+          title="Slides"
+        />
+        <Contact 
+          title="Notist"
+        />
+        <Contact 
+          title="Keybase"
+        />
+        <Contact 
+          title="YouTube"
+        />
+      </SubOne>
+    </Section>
   </Layout>
 )
 
