@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <Section title="About">
       <SubTwo>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/325029/michelle.png"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/325029/michelle.png" alt="Jordan" />
         <div>
           <h3>Hello World</h3>
           <p>I’m mJordan, a creative front end developer currently working as a contractor at Nike. Nothing excites me more than immersing myself in a good challenge or a great book. For me, coding is the perfect mix of logical problem solving, and creative artistic expression. When not coding, I am spending my time creating something new, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.</p>
@@ -39,7 +39,7 @@ const IndexPage = () => (
     <Section title="Contact">
       <SubOne 
         ifFlex={false}>
-        <p>Reach out! I would love to hear from you to chat about anything related to web development or CSS. I can be found in many places around the interwebs usually as @mjordancodes. You can also poke around to see more code samples or some of the pictures I like to post.</p>
+        <p>Reach out! I love to talk about anything CSS, HTML, design, or web development in general. I'm always willing to help out a new coder or share my experience. Come find me online and send a message. I can be found in many places around the interwebs usually as @mjordancodes. </p>
       </SubOne>
       <SubOne
         isFlex={true}>
@@ -50,24 +50,23 @@ const IndexPage = () => (
         />
         <Contact 
           title="Linkedin"
+          url="https://www.linkedin.com/in/michellejl/"
+          handle="michellejl"
         />
         <Contact 
           title="CodePen"
+          url="https://codepen.io/mjordancodes/"
+          handle="mjordancodes"
         />
         <Contact 
           title="Instagram"
+          url="https://www.instagram.com/mjordancodes/"
+          handle="mjordancodes"
         />
         <Contact 
-          title="Slides"
-        />
-        <Contact 
-          title="Notist"
-        />
-        <Contact 
-          title="Keybase"
-        />
-        <Contact 
-          title="YouTube"
+          title="hi at mjordan dot codes"
+          url="mailto:hi@mjordan.codes"
+
         />
       </SubOne>
     </Section>

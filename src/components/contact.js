@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './contact.module.scss'
 import { 
-  FaGithubAlt, 
-  FaLinkedin, 
   FaCodepen,
+  FaGithubAlt, 
   FaInstagram,
   FaKeybase,
+  FaLinkedin, 
   FaTwitter,
   FaYoutube } 
   from 'react-icons/fa'
