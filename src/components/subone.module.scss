@@ -7,6 +7,7 @@
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 10px 0;
   img {
@@ -16,12 +17,12 @@
     height: 200px;
     object-fit: contain;
   }
-  @media (min-width: 600px) {
+  article {
+    flex: 1 0 250px;
+    padding: 10px;
+  }
+  @media (min-width: 700px) {
     justify-content: space-around;
     flex-direction: row;
-    article {
-      flex: 1 1 200px;
-      padding: 5px;
-    }
   }
 }
