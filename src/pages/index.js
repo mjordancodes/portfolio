@@ -6,13 +6,10 @@ import Section from '../components/section'
 import SubOne from '../components/subone'
 import SubTwo from '../components/subtwo'
 import Community from '../components/community'
-import Contact from '../components/contact'
 
-const IndexPage = ({
-  data: {
-    allContentfulOnlineIdentity: { edges }
-  }
-}) => (
+import ContactSection from '../sections/contact'
+
+const IndexPage = () => (
   <Layout>
     <Section title="About">
       <SubTwo>
@@ -41,42 +38,8 @@ const IndexPage = ({
         </Community>
       </SubOne>
     </Section>
-    <Section title="Contact">
-      <SubOne 
-        ifFlex={false}>
-        <p>Reach out! I love to talk about anything CSS, HTML, design, or web development in general. I'm always willing to help out a new coder or share my experience. Come find me online and send a message. I can be found in many places around the interwebs usually as @mjordancodes. </p>
-      </SubOne>
-      <SubOne
-        isFlex={true}>
-        { edges.map(edge => (
-            <Contact 
-              key={edge.node.id}
-              title={edge.node.title}
-              url={edge.node.url}
-            />
-          )
-        )}
-        <Contact 
-          title='hi at mjordan dot codes'
-          url='mailto:hi@mjordan.codes'
-        />
-      </SubOne>
-    </Section>
+    <ContactSection />
   </Layout>
 )
-
-export const query = graphql`
-{
-  allContentfulOnlineIdentity {
-    edges {
-      node {
-        id
-        title
-        url
-      }
-    }
-  }
-}
-`
 
 export default IndexPage
