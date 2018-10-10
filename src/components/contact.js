@@ -10,9 +10,9 @@ import {
   FaYoutube } 
   from 'react-icons/fa'
 
-const Contact = ({ title, url }) => (
+const Contact = ({ title, url, key }) => (
 
-  <div className={styles.contact}>
+  <div className={styles.contact} key={key}>
     <span className="sr-only">{title}</span>
     <a href={url}>
       { 
@@ -20,7 +20,7 @@ const Contact = ({ title, url }) => (
         : title === 'GitHub' ? <FaGithubAlt />
         : title === 'Instagram' ? <FaInstagram />
         : title === 'Keybase' ? <FaKeybase />
-        : title === 'Linkedin' ? <FaLinkedin />
+        : title === 'LinkedIn' ? <FaLinkedin />
         : title === 'Twitter' ? <FaTwitter />
         : title === 'YouTube' ? <FaYoutube />
         : <span>{title}</span>

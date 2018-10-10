@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Section from '../components/section'
@@ -7,7 +8,11 @@ import SubTwo from '../components/subtwo'
 import Community from '../components/community'
 import Contact from '../components/contact'
 
-const IndexPage = () => (
+const IndexPage = ({
+  data: {
+    allContentfulOnlineIdentity: { edges }
+  }
+}) => (
   <Layout>
     <Section title="About">
       <SubTwo>
@@ -43,34 +48,35 @@ const IndexPage = () => (
       </SubOne>
       <SubOne
         isFlex={true}>
+        { edges.map(edge => (
+            <Contact 
+              key={edge.node.id}
+              title={edge.node.title}
+              url={edge.node.url}
+            />
+          )
+        )}
         <Contact 
-          title="GitHub"
-          url="https://github.com/mjordancodes"
-          handle="mjordancodes"
-        />
-        <Contact 
-          title="Linkedin"
-          url="https://www.linkedin.com/in/michellejl/"
-          handle="michellejl"
-        />
-        <Contact 
-          title="CodePen"
-          url="https://codepen.io/mjordancodes/"
-          handle="mjordancodes"
-        />
-        <Contact 
-          title="Instagram"
-          url="https://www.instagram.com/mjordancodes/"
-          handle="mjordancodes"
-        />
-        <Contact 
-          title="hi at mjordan dot codes"
-          url="mailto:hi@mjordan.codes"
-
+          title='hi at mjordan dot codes'
+          url='mailto:hi@mjordan.codes'
         />
       </SubOne>
     </Section>
   </Layout>
 )
+
+export const query = graphql`
+{
+  allContentfulOnlineIdentity {
+    edges {
+      node {
+        id
+        title
+        url
+      }
+    }
+  }
+}
+`
 
 export default IndexPage
