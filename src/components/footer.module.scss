@@ -1,0 +1,14 @@
+@import 'variables';
+
+.content {
+  @include content-width
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copy {
+  text-align: center;
+}

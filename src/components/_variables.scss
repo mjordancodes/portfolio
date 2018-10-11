@@ -9,3 +9,9 @@ $black: #333;
 $white: #fefefe;
 $darkgray: #666;
 $gray: #999;
+
+@mixin content-width {
+  width: 90vw;
+  max-width: 900px;
+  margin: 0 auto;
+}

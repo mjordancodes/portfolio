@@ -3,9 +3,8 @@
 
 
 .topic {
+  @include content-width;
   margin: 5vh auto 25vh;
-  width: 90vw;
-  max-width: 900px;
   text-align: justify;
   @media (min-width: 400px) { 
     display: grid;
