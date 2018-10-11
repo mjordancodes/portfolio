@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Landing from './landing'
 import './layout.scss'
 
 const Layout = ({ children }) => (
@@ -29,9 +28,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Landing 
-          name={data.site.siteMetadata.name}
-          tagline={data.site.siteMetadata.tagline} />
+        
         <div className="page-container">
           {children}
         </div>

@@ -1,0 +1,32 @@
+.ducks {
+  background: url('https://images.ctfassets.net/r7cyj3cr2xt1/48vx26wen6qeASicuoweMM/b05446686a9155416ad5368025952f77/joshua-coleman-655076-unsplash.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.text {
+  max-width: 75vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  > * {
+    background: white;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  ol {
+    list-style-position: inside;
+    margin: 0 0 10px;
+  }
+}
+
+.mylink {
+  font-size: 1.4em;
+}

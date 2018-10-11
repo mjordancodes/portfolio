@@ -14,7 +14,7 @@ const Contact = ({ title, url, key }) => (
 
   <div className={styles.contact} key={key}>
     <span className="sr-only">{title}</span>
-    <a href={url}>
+    <a href={url} target="_blank">
       { 
         title === 'CodePen' ? <FaCodepen /> 
         : title === 'GitHub' ? <FaGithubAlt />
