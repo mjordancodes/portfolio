@@ -1,60 +1,24 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import Section from '../components/sections/section'
-import SubOne from '../utils/subone'
+import CurrentNow from '../components/now-current'
+import NowList from '../components/now-list'
+
+import Styles from '../components/now.module.scss'
 
 const NowPage = ({data}) => (
   <Layout>
 
-    {data.allContentfulNow.edges.map(edge => (
-      <Section
-      title={edge.node.date}
-      key={edge.node.id} >
-        <SubOne>
-          <h4>What I am doing at work:</h4>
-          <p>{edge.node.whatIAmDoingAtWork.whatIAmDoingAtWork}</p>
-
-          <h4>Personal projects I am making progress on:</h4>
-          <p>{edge.node.personalProjectsIAmWorkingOn.personalProjectsIAmWorkingOn}</p>
-
-          <h4>Life updates I fell like sharing:</h4>
-          <p>{edge.node.lifeThingsIWantToShare.lifeThingsIWantToShare}</p>
-        </SubOne>
-
-        
-
-      </Section>
-    ))}
+    <div className={Styles.intro}>
+      <h2>The Now Page</h2>
+      <p>I recently read about something called <a href="https://sivers.org/nowff" target="_blank">The Now Movement</a>, and decided I should create a /now page. For the moment, my updates are organized into three categories: Work, Personal Projects, and Life.</p>
+    </div>
+    
+    <CurrentNow />
+    <NowList />
     
   </Layout>
 )
 
-
-export const query = graphql`
-  query {
-    allContentfulNow (
-      sort: {
-        fields: [date],
-         order: DESC}, )
-    {
-      edges {
-        node {
-          id
-          date
-         whatIAmDoingAtWork {
-           whatIAmDoingAtWork
-         }
-         personalProjectsIAmWorkingOn {
-           personalProjectsIAmWorkingOn
-         }
-         lifeThingsIWantToShare {
-           lifeThingsIWantToShare
-         }
-        }
-      }
-    }
- }
-`
-
 export default NowPage
+

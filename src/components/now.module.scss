@@ -1,0 +1,9 @@
+@import 'variables';
+
+.title {
+  margin-top: 25px;
+}
+
+.intro {
+  @include content-width;
+}
