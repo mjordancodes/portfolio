@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 
-import SubOne from '../components/subone'
-import Community from '../components/community'
+import SubOne from '../../utils/subone'
+import Community from '../community-item'
 
 
 

@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import Landing from '../components/landing'
 
-import ContactSection from '../sections/contact'
-import AboutSection from '../sections/about'
+import ContactSection from '../components/sections/contact'
+import AboutSection from '../components/sections/about'
 
 const IndexPage = ({data}) => (
   <Layout>

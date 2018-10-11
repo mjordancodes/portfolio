@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 
-import Section from '../components/section'
-import SubTwo from '../components/subtwo'
+import Section from './section'
+import SubTwo from '../../utils/subtwo'
 import CommunitySection from './community'
 
 

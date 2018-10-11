@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './contact.module.scss'
+import styles from './contact-item.module.scss'
 import { 
   FaCodepen,
   FaGithubAlt, 

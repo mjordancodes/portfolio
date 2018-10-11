@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './community.module.scss'
+import styles from './community-item.module.scss'
 
 const Community = ({ children, title, image }) => (
   <article>

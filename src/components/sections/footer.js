@@ -5,6 +5,7 @@ const Footer = () => (
   <footer className={styles.content}>
     <nav className={styles.footerNav}>
       <a href="/">Home</a>
+      <a href="/now">Now</a>
       <a href="/rubber-ducks">Rubber Ducks</a>
     </nav>
 

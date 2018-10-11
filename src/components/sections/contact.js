@@ -1,9 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 
-import Section from '../components/section'
-import SubOne from '../components/subone'
-import Contact from '../components/contact'
+import Section from './section'
+import SubOne from '../../utils/subone'
+import Contact from '../contact-item'
 
 export default () => (
   <StaticQuery

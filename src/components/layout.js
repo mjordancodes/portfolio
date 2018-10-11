@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Footer from '../components/footer'
+import Footer from '../components/sections/footer'
 import './layout.scss'
 
 
