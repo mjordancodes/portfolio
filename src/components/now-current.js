@@ -21,15 +21,21 @@ export default () => (
             node {
               id
               date
-             whatIAmDoingAtWork {
-               whatIAmDoingAtWork
-             }
-             personalProjectsIAmWorkingOn {
-               personalProjectsIAmWorkingOn
-             }
-             lifeThingsIWantToShare {
-               lifeThingsIWantToShare
-             }
+              whatIAmDoingAtWork {
+                childMarkdownRemark {
+                  html
+                }
+              }
+              personalProjectsIAmWorkingOn {
+                childMarkdownRemark {
+                  html
+                }
+              }
+              lifeThingsIWantToShare {
+                childMarkdownRemark {
+                  html
+                }
+              }
             }
           }
         }
@@ -42,13 +48,25 @@ export default () => (
           title={`Updated: ${data.allContentfulNow.edges[0].node.date}`} >
 
           <h4 className={Styles.title}>What I am doing at work:</h4>
-          <p>{data.allContentfulNow.edges[0].node.whatIAmDoingAtWork.whatIAmDoingAtWork}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.allContentfulNow.edges[0].node.whatIAmDoingAtWork.childMarkdownRemark.html,
+            }}
+          />
 
           <h4 className={Styles.title}>Personal projects I am making progress on:</h4>
-          <p>{data.allContentfulNow.edges[0].node.personalProjectsIAmWorkingOn.personalProjectsIAmWorkingOn}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.allContentfulNow.edges[0].node.personalProjectsIAmWorkingOn.childMarkdownRemark.html,
+            }}
+          />
 
           <h4 className={Styles.title}>Life updates I fell like sharing:</h4>
-          <p>{data.allContentfulNow.edges[0].node.lifeThingsIWantToShare.lifeThingsIWantToShare}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.allContentfulNow.edges[0].node.lifeThingsIWantToShare.childMarkdownRemark.html,
+            }}
+          />
         </SubOne>
 
       </Section>

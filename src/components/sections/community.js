@@ -16,13 +16,17 @@ export default () => (
           }
         ) {
           description {
-            description
+            childMarkdownRemark {
+              html
+            }
           }
           about_sub_topic {
             id
             title
             description {
-              description
+              childMarkdownRemark {
+                html
+              }
             }
             logo {
               file {
@@ -38,7 +42,11 @@ export default () => (
       <SubOne 
         title="Community Involvement"
         isFlex={false}>
-        {data.contentfulAboutTopic.description.description}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.contentfulAboutTopic.description.childMarkdownRemark.html,
+          }}
+        />
       </SubOne>
       <SubOne
         isFlex={true}>
@@ -46,8 +54,13 @@ export default () => (
           <Community
             title={edge.title}
             image={edge.logo.file.url}
-            children={edge.description.description}
-          />
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: edge.description.childMarkdownRemark.html,
+              }}
+            />
+          </Community>
         ))}
        
         
@@ -56,4 +69,3 @@ export default () => (
     )}
   />
 )
-
