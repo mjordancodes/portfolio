@@ -49,7 +49,6 @@ export default () => (
 
           <h4 className={Styles.title}>What I am doing at work:</h4>
           <div
-            className={Styles.updates}
             dangerouslySetInnerHTML={{
               __html: data.allContentfulNow.edges[0].node.whatIAmDoingAtWork.childMarkdownRemark.html,
             }}
@@ -57,7 +56,6 @@ export default () => (
 
           <h4 className={Styles.title}>Personal projects I am making progress on:</h4>
           <div
-            className={Styles.updates}
             dangerouslySetInnerHTML={{
               __html: data.allContentfulNow.edges[0].node.personalProjectsIAmWorkingOn.childMarkdownRemark.html,
             }}
@@ -65,7 +63,6 @@ export default () => (
 
           <h4 className={Styles.title}>Life updates I fell like sharing:</h4>
           <div
-            className={Styles.updates}
             dangerouslySetInnerHTML={{
               __html: data.allContentfulNow.edges[0].node.lifeThingsIWantToShare.childMarkdownRemark.html,
             }}
