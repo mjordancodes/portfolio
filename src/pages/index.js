@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from "gatsby"
 
 import Layout from '../components/layout'
-import Landing from '../components/landing'
+import Landing from '../components/home/landing'
 
 import ContactSection from '../components/sections/contact'
 import AboutSection from '../components/sections/about'
