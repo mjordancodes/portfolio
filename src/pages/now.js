@@ -15,7 +15,7 @@ const NowPage = ({data}) => (
     </div>
     
     <CurrentNow />
-    <NowList />
+    {/* <NowList /> */}
     
   </Layout>
 )
