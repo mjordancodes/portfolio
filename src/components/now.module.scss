@@ -7,3 +7,9 @@
 .intro {
   @include content-width;
 }
+
+.updates {
+  p {
+    margin-bottom: 1em;
+  }
+}

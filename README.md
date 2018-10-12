@@ -11,6 +11,7 @@ Gatsby + Contentful = <3
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)
 ## Content 
 - [gatsby-source-contentful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/)
+- [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/) --> For handling markdown content recieved from contentful
 
 ## Project Structure
 - `src`
