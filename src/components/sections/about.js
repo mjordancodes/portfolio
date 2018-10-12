@@ -17,10 +17,14 @@ export default () => (
           }
         ) {
           fullLength {
-            fullLength
+            childMarkdownRemark {
+              html
+            }
           }
           blurb {
-            blurb
+            childMarkdownRemark {
+              html
+            }
           }
         }
       }
@@ -31,7 +35,11 @@ export default () => (
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/325029/michelle.png" alt="Jordan" />
         <div>
           <h3>Hello World</h3>
-          {data.contentfulBio.blurb.blurb}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.contentfulBio.blurb.childMarkdownRemark.html,
+            }}
+          />
         </div>
       </SubTwo>
       <CommunitySection />
