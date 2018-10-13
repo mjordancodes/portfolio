@@ -42,6 +42,7 @@ export const query = graphql`
           title
           postType
           tags
+          slug
           createdAt(formatString: "MMMM DD, YYYY")
           post {
             childMarkdownRemark {

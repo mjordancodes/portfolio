@@ -2,6 +2,7 @@
 
 .container {
   @include content-width;
+  margin-top: 50px;
 }
 
 .postInfo {
