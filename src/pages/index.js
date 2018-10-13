@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from '../components/layout'
 import Landing from '../components/home/landing'
-
 import Header from '../components/sections/header'
 import ContactSection from '../components/sections/contact'
 import AboutSection from '../components/sections/about'
