@@ -12,7 +12,7 @@ const IndexPage = ({data}) => (
     <Landing 
           name={data.site.siteMetadata.name}
           tagline={data.site.siteMetadata.tagline} />
-    {/* <Header /> */}
+    <Header />
     <AboutSection />
     <ContactSection />
   </Layout>

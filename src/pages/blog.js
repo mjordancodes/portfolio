@@ -16,7 +16,7 @@ const BlogPage = ({data}) => (
           <div className={Styles.postPreview}>
             <header>
               <h3>
-                <a href="/blog-post">
+                <a href={`/blog/${edge.node.slug}`}>
                   {edge.node.title}
                 </a>
               </h3>
